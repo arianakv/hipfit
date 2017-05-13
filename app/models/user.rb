@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :exercies 
   validates :name, :email, presence: true
 
   def self.create_from_facebook(auth)
