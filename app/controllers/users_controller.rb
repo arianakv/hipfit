@@ -12,7 +12,8 @@ class UsersController < ApplicationController
   end
 
   def assign
-    redirect_to_user_profile
+    redirect_to "/user_profile"
+    puts "YAY"
   end
 
 end

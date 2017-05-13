@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 root 'users#new'
 get 'users/new'
+post 'users/assign' => 'users#assign'
+
 
 get 'users/exercises'                  =>         'users#exercises'
 get 'user_profile'                       =>         'users#info'
