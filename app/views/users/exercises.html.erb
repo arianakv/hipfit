@@ -1,0 +1,11 @@
+
+<h3>Pick your favorite exercises</h3>
+
+
+<%= form_tag() do %>
+  <% @exercises.each do |e| %>
+  <%= check_box_tag(e[:id]) %>
+  <%= label_tag(e[:exercise_name]) %></br>
+  <% end %>
+  <%= submit_tag("Submit") %>
+  <% end %>
