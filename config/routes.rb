@@ -3,7 +3,8 @@ root 'users#new'
 get 'users/new'
 post 'users/assign' => 'users#assign'
 
-
+get 'users/match'                      =>          'users#match'
+get 'users/show'                        =>         'users#show'
 get 'users/exercises'                  =>         'users#exercises'
 get 'user_profile'                       =>         'users#info'
 get 'auth/:provider/callback'     =>         'sessions#create'
