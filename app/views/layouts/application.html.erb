@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HipfitOa</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&callback=googleMapsScriptLoaded&signed_in=false"></script>
+    
+  </head>
+
+  <body class="onepage" data-spy="scroll" data-target=".navbar">
+    <%= yield %>
+  </body>
+</html>

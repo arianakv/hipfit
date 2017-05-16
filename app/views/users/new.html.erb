@@ -1,0 +1,396 @@
+
+
+<div class="content-wrapper">
+  <nav class="navbar nobg">
+    <div class="container">
+      <div class="navbar-inner">
+        <div class="navbar-header">
+          <div class="navbar-brand"><%=image_tag "logo.png" %></a></div>
+
+
+
+          <div class="nav-bars-wrapper">
+            <div class="nav-bars-inner">
+              <div class="nav-bars" data-toggle="collapse" data-target=".navbar-collapse"><span></span></div>
+            </div>
+
+
+            <!-- /.nav-bars-inner -->
+          </div>
+
+          <!-- /.nav-bars-wrapper -->
+        </div>
+        <!-- /.nav-header -->
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+             <li><a href="#home">Home</a> </li>
+             <li><a href="#about">About</a> </li>
+            <li><a href="#contact">Contact</a> </li>
+            <li><a href="/events/show">Events <span class="caret"></span></a>
+
+            </ul>
+
+            </li>
+
+
+
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+      <!--/.navbar-inner -->
+    </div>
+    <!--/.container -->
+  </nav>
+  <!--/.navbar -->
+
+
+  <section id="home">
+    <div class="light-wrapper">
+      <div class="rev_slider_wrapper fullscreen-container">
+        <div id="slider" class="rev_slider fullscreenbanner" data-version="5.4.1">
+          <ul>
+            <li data-transition="parallaxtoright" data-fstransition="fade">
+              <%= image_tag "art/slider-bg1.jpg" %>
+
+              <div class="tp-caption light text-center"
+	        data-x="center"
+			data-y="middle"
+			data-voffset="['-35','-35','-35','-30']"
+			data-fontsize="['55','55','45','30']"
+			data-lineheight="['65','65','55','45']"
+			data-width="['1100','980','700','450']"
+			data-textAlign='["center","center","center","center"]'
+			data-whitespace='["normal","normal","normal","normal"]'
+			data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+			data-responsive="on"
+			data-responsive_offset="on"
+			style="z-index: 9;"></div>
+              <div class="tp-caption light text-center"
+			data-x="center"
+			data-y="middle"
+			data-voffset="['35','35','35','30']"
+			data-fontsize="['55','55','45','30']"
+			data-lineheight="['65','65','55','45']"
+			data-width="['1100','980','700','450']"
+			data-textAlign='["center","center","center","center"]'
+			data-whitespace='["normal","normal","normal","normal"]'
+			data-frames='[{"delay":1500,"speed":2000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+			data-responsive="on"
+			data-responsive_offset="on"
+			style="z-index: 9;"> Connecting Individuals through Fitness</div>
+
+            </li>
+            <li data-transition="parallaxtoleft"><%= image_tag "art/slider-bg2.jpg" %>
+              <div class="tp-caption light text-center"
+			data-x="center"
+			data-y="middle"
+			data-voffset="['-35','-35','-35','-30']"
+			data-fontsize="['55','55','45','30']"
+			data-lineheight="['65','65','55','45']"
+			data-width="['1100','980','700','450']"
+			data-textAlign='["center","center","center","center"]'
+			data-whitespace='["normal","normal","normal","normal"]'
+			data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1000,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+			data-responsive="on"
+			data-responsive_offset="on"
+			style="z-index: 9;"></div>
+              <div class="tp-caption light text-center"
+			data-x="center"
+			data-y="middle"
+			data-voffset="['35','35','35','30']"
+			data-fontsize="['55','55','45','30']"
+			data-lineheight="['65','65','55','45']"
+			data-width="['1100','980','700','450']"
+			data-textAlign='["center","center","center","center"]'
+			data-whitespace='["normal","normal","normal","normal"]'
+			data-frames='[{"from":"x:50px;opacity:0;","speed":1000,"to":"o:1;","delay":1500,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+			data-responsive="on"
+			data-responsive_offset="on"
+			style="z-index: 9;">Never workout alone</div>
+            </li>
+            <li data-transition="parallaxtobottom">
+              <%= image_tag "demo.jpg", data: { bgposition: "center center", bgfit: "cover", bgrepeat: "no-repeat", "no-retina" => "" }, class: "rev-slidebg" %>
+              <div class="rs-background-video-layer"
+	        data-forcerewind="on"
+		    data-volume="mute"
+			data-videowidth="100%"
+			data-videoheight="100%"
+			data-videomp4="/demo.mp4"
+			data-videopreload="preload"
+			data-videoloop="none"
+			data-forcecover="1"
+			data-aspectratio="16:9"
+			data-autoplay="true"
+			data-autoplayonlyfirsttime="false"
+			data-nextslideatend="true"
+			data-dottedoverlay="darkoverlay"></div>
+              <div class="tp-caption light text-center"
+			data-x="center"
+			data-y="middle"
+			data-voffset="['-35','-35','-35','-30']"
+			data-fontsize="['55','55','45','30']"
+			data-lineheight="['65','65','55','45']"
+			data-width="['1100','980','700','450']"
+			data-textAlign='["center","center","center","center"]'
+			data-whitespace='["normal","normal","normal","normal"]'
+			data-frames='[{"delay":1000,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.3;sY:1.3;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":100,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+			data-responsive="on"
+			data-responsive_offset="on"
+			style="z-index: 9;">Sign Up</div>
+              <div class="tp-caption light text-center"
+			data-x="center"
+			data-y="middle"
+			data-voffset="['35','35','35','30']"
+			data-fontsize="['55','55','45','30']"
+			data-lineheight="['65','65','55','45']"
+			data-width="['1100','980','700','450']"
+			data-textAlign='["center","center","center","center"]'
+			data-whitespace='["normal","normal","normal","normal"]'
+			data-frames='[{"delay":2000,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.3;sY:1.3;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":200,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+			data-responsive="on"
+			data-responsive_offset="on"
+			style="z-index: 9;">Today!</div>
+            </li>
+          </ul>
+          <div class="tp-bannertimer tp-bottom"></div>
+        </div>
+        <!-- /.rev_slider -->
+      </div>
+      <!-- /.rev_slider_wrapper -->
+    </div>
+    <!-- /.light-wrapper -->
+
+  <!-- /#home -->
+
+          <!--/column -->
+
+        </div>
+        <!--/.row -->
+
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.light-wrapper -->
+
+
+              <!-- /column -->
+            </div>
+            <!-- /.row -->
+
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.container -->
+
+    </div>
+    <!-- /.parallax -->
+
+  </section>
+
+  <!-- /#services-->
+  <section id="about">
+    <div class="light-wrapper">
+      <div class="container inner">
+        <h2 class="section-title text-center">About Our Company</h2>
+        <p class="lead text-center">A creative team making the world better through fitness</p>
+        <div class="space20"></div>
+        <div class="row">
+          <div class="col-md-6">
+            <figure><%= image_tag "art/about.jpg" %></figure>
+          </div>
+          <!-- /column -->
+          <div class="space30 hidden-xs hidden-md hidden-lg"></div>
+          <div class="col-md-6">
+            <h3>What is HipFit</h3>
+            <p></p>
+            <blockquote>
+         <p>"HipFit is a social network created to connect individuals through fitness. Whether you’re an avid fitness lover, or looking to get into fitness, HipFit will make it easier to connect, meet, and maintain a consistent fitness routine!"</p>
+            </blockquote>
+            <p>Just sign in and start meeting fitness friends that are close to you</p>
+
+          </div>
+
+
+      </div>
+
+      </div>
+
+  </div>
+
+
+  <div class="light-wrapper">
+    <div class="container inner">
+      <div class="row">
+        <div class="col-sm-3">
+          <h3>Meet the Team</h3>
+          <p>WE promote a healthy Lifestyle</p>
+          <div class="text-carousel-controls">
+            <!-- <div class="btn btn-square prev"><i class="fa fa-angle-left"></i></div> -->
+            <!-- <div class="btn btn-square next"><i class="fa fa-angle-right"></i></div> -->
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="text-carousel text-center cs-hidden">
+            <div class="item">
+              <figure class="mb-20"><%= image_tag "art/team1.jpg" %></figure>
+              <h5>Michael Benrubi</h5>
+              <div class="meta">Co-Founder</div>
+              <div class="space5"></div>
+              <p>HipFit's CFO</p>
+              <ul class="social">
+                <li><a href="www.twitter.com/djmikeb1"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="www.facebook.com/djmikeb1"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+              </ul>
+            </div>
+            <!-- /.item -->
+            <div class="item">
+              <figure class="mb-20"><%= image_tag "art/team2.jpg" %></figure>
+              <h5>Ariana Viale </h5>
+              <div class="meta">Founder</div>
+              <div class="space5"></div>
+              <p>HipFit's CEO</p>
+              <ul class="social">
+                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+            <!-- /.item -->
+
+
+            <!-- /.item -->
+
+            <!-- /.item -->
+          </div>
+          <!-- /.text-carousel -->
+
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /#about -->
+  <section id="contact">
+    <div class="google-map h450" data-lat="25.8031018" data-lng="-80.2043699"></div>
+    <div class="light-wrapper">
+      <div class="container inner pb-60">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h2 class="section-title text-center">Get in Touch</h2>
+            <p class="lead text-center">Feel free to drop us a line and contact us</p>
+            <p class="text-center"></p>
+            <ul class="contact-info list-inline text-center">
+              <li><i class="budicon-pin"></i>
+                <p>Miami,Fl.</p>
+              </li>
+              <li><i class="budicon-profile"></i>
+                <p><a href="mailto:first.last@email.com" class="nocolor">mike@funxdable.com</a></p>
+              </li>
+              <li><i class="budicon-telephone"></i>
+                <p>954-551-9247</p>
+              </li>
+            </ul>
+            <div class="space30"></div>
+            <div class="form-container">
+              <form action="contact/vanilla-form.php" method="post" class="vanilla vanilla-form" novalidate>
+                <div class="row">
+                  <div class="col-sm-6 pr-10">
+                    <div class="form-field">
+                      <label>Your name*
+                        <input type="text" name="name" required="required">
+                      </label>
+                    </div>
+                    <!--/.form-field -->
+                  </div>
+                  <!--/column -->
+                  <div class="col-sm-6 pl-10">
+                    <div class="form-field">
+                      <label>Your e-mail*
+                        <input type="email" name="email" required="required">
+                      </label>
+                    </div>
+                    <!--/.form-field -->
+                  </div>
+                  <!--/column -->
+                  <div class="col-sm-6 pr-10">
+                    <div class="form-field">
+                      <label>Subject
+                        <input type="text" name="subject">
+                      </label>
+                    </div>
+                    <!--/.form-field -->
+                  </div>
+                  <!--/column -->
+                  <div class="col-sm-6 pl-10">
+                    <div class="form-field">
+                      <label>Your Phone
+                        <input type="tel" name="tel">
+                      </label>
+                    </div>
+                    <!--/.form-field -->
+                  </div>
+                  <!--/column -->
+
+                  <div class="col-sm-12">
+                    <div class="form-field">
+                      <label>Your Message*
+                        <textarea name="message" required></textarea>
+                      </label>
+                      <div class="text-center">
+                        <input type="submit" class="btn" value="Send Message" data-error="Fix errors" data-processing="Sending..." data-success="Thank you!">
+                      </div>
+                      <footer class="notification-box"></footer>
+                    </div>
+                    <!--/.form-field -->
+                  </div>
+                  <!--/column -->
+
+                </div>
+                <!--/.row -->
+
+              </form>
+              <!--/.vanilla-form -->
+            </div>
+            <!--/.form-container -->
+
+          </div>
+          <!--/column -->
+
+        </div>
+        <!--/.row -->
+
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.light-wrapper -->
+  </section>
+  <!-- /#contact -->
+</div>
+<!-- /.content-wrapper -->
+<footer class="inverse-wrapper">
+  <div class="sub-footer">
+    <div class="container inner">
+      <div class="cell text-left">
+        <p>© 2017 HipFit. All rights reserved.</p>
+      </div>
+      <!-- /.cell -->
+      <div class="cell text-right">
+        <ul class="social">
+          <li><a href="#"><i class="fa fa-rss"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+
+          <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <!-- /.cell -->
+    </div>
+    <!-- /.sub-footer -->
+  </div>
+  <!-- /.container -->
+</footer>
