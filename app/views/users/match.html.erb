@@ -1,0 +1,9 @@
+<h1>Explore Your Matches!</h1>
+<% @result.each do |exercise| %>
+<h2><%= exercise[:exercise_name] %></h2>
+<% exercise[:users].each do |user| %>
+<div><%= user[:user_name] %>
+<%= user[:user_email] %>
+</div>
+<% end %>
+<% end %>

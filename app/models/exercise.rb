@@ -1,3 +1,6 @@
 class Exercise < ApplicationRecord
-  belongs_to :user, required: false
+
+  has_many :user_exercises
+  has_many :users, through: :user_exercises
+
 end
