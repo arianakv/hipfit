@@ -1,8 +1,12 @@
 
-<h3>Pick your favorite exercises</h3>
+<div class="jumbotron">
+  <div class="container">
+  <h1>Pick your favorite exercises</h1>
+</div>
+</div>
 
 
-<%= form_for @user, :url => {:action => "assign"}, :method => :POST do %> 
+<%= form_for @user, :url => {:action => "assign"}, :method => :POST do %>
   <% @exercises.each do |e| %>
   <%= check_box_tag(e[:id]) %>
   <%= label_tag(e[:exercise_name]) %></br>

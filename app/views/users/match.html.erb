@@ -1,4 +1,9 @@
-<h1>Explore Your Matches!</h1>
+<div class="jumbotron">
+  <div class="container">
+  <h1>Explore Your Matches!</h1>
+</div>
+</div>
+
 <% @result.each do |exercise| %>
 <h2><%= exercise[:exercise_name] %></h2>
 <% exercise[:users].each do |user| %>
@@ -7,6 +12,3 @@
 </div>
 <% end %>
 <% end %>
-
-
-<%= mail_to_user[:user_email] %>

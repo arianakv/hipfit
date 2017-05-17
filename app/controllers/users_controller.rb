@@ -1,14 +1,17 @@
 class UsersController < ApplicationController
 
-  def new
+def new
   User.new
 end
 
 def info
 end
 
-def exercises
+# def facebook
+#   @facebook ||= Koala::Facebook::API.new(oath_token)
+# end
 
+def exercises
   @user = current_user
   @exercises = Exercise.all
 end

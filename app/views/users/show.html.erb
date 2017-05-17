@@ -1,4 +1,15 @@
-<h1>All Users on the App</h1>
-<% @all.each do |user| %></br>
-<%= user.name %>
+<div class="jumbotron">
+  <div class="container">
+  <h1>All Users on the App</h1>
+</div>
+</div>
+
+<div class="container">
+  <div class="row">
+<div class="col-lg-4">
+<% @all.each do |u| %>
+<h3><%= u.name %></h>
 <% end %>
+</div>
+</div>
+</div>
