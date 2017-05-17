@@ -4,7 +4,11 @@
 </div>
 </div>
 
-
+<%= image_tag current_user.picture %>
+<%= current_user.age_range %> +
+<%= current_user.user_location %>
+<%= current_user.gender %>
+<%= link_to "Go to profile", current_user.link%><br><br>
 <%= link_to "See your matches!", users_match_path, class: 'btn btn-primary btn-sm'%></br>
 <%= link_to "Find other users", users_show_path, class: 'btn btn-primary btn-sm' %></br>
 <%= link_to "Change your exercise preferences", users_exercises_path, class: 'btn btn-primary btn-sm' %></br>

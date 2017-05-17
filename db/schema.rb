@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170513004835) do
+ActiveRecord::Schema.define(version: 20170517191728) do
 
   create_table "exercises", force: :cascade do |t|
     t.string   "exercise_name"
@@ -30,8 +30,13 @@ ActiveRecord::Schema.define(version: 20170513004835) do
     t.string   "name"
     t.string   "email"
     t.string   "facebook_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.string   "picture"
+    t.string   "age_range"
+    t.string   "user_location"
+    t.string   "gender"
+    t.string   "link"
   end
 
 end
