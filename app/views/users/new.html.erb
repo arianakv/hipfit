@@ -1,12 +1,4 @@
-<h1>Welcome to HipFit!</h1>
-<em><%= notice %></em><br>
-<% if current_user %>
-  Welcome <%= current_user.name %> you have successfully signed in!<br>
-  <%= link_to "Sign out", logout_path %>
-<% else %>
-  You are so not signed in.<br>
-<%= link_to "Sign in with Facebook", facebook_login_path %><br>
-<% end %>
+
 
 
 <div class="content-wrapper">
@@ -14,8 +6,7 @@
     <div class="container">
       <div class="navbar-inner">
         <div class="navbar-header">
-          <div class="navbar-brand"><%=image_tag "logo.png" %></a></div>
-
+          <a href="/"><%=image_tag "logo2.png" %></a>
 
 
           <div class="nav-bars-wrapper">
@@ -33,10 +24,12 @@
 
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-             <li><a href="#home">Home</a> </li>
              <li><a href="#about">About</a> </li>
+             <li><a href="/user_profile">Profile <span class="caret"></span></a>
+             <li><a href="/users/events">Events <span class="caret"></span></a>
             <li><a href="#contact">Contact</a> </li>
-            <li><a href="/events/show">Events <span class="caret"></span></a>
+
+
 
             </ul>
 
@@ -159,7 +152,7 @@
 			data-frames='[{"delay":2000,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.3;sY:1.3;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":200,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
 			data-responsive="on"
 			data-responsive_offset="on"
-			style="z-index: 9;">Today!</div>
+			style="z-index: 9;">Now!</div>
             </li>
           </ul>
           <div class="tp-bannertimer tp-bottom"></div>
@@ -204,24 +197,33 @@
   <section id="about">
     <div class="light-wrapper">
       <div class="container inner">
-        <h2 class="section-title text-center">About Our Company</h2>
+        <h2 class="section-title text-center">About Us</h2>
         <p class="lead text-center">A creative team making the world better through fitness</p>
         <div class="space20"></div>
         <div class="row">
           <div class="col-md-6">
-            <figure><%= image_tag "art/about.jpg" %></figure>
+            <figure><%= image_tag "art/runners.jpg" %></figure>
           </div>
           <!-- /column -->
           <div class="space30 hidden-xs hidden-md hidden-lg"></div>
           <div class="col-md-6">
-            <h3>What is HipFit</h3>
             <p></p>
             <blockquote>
-         <p>"HipFit is a social network created to connect individuals through fitness. Whether you’re an avid fitness lover, or looking to get into fitness, HipFit will make it easier to connect, meet, and maintain a consistent fitness routine!"</p>
+         <p>HipFit is a social network created to connect individuals through fitness. Whether you’re an avid fitness lover, or looking to get into fitness, HipFit will make it easier to connect, meet, and maintain a consistent fitness routine!</p>
             </blockquote>
-            <p>Just sign in and start meeting fitness friends that are close to you</p>
 
-          </div>
+           <h1>Sign in</h1>
+            <em><%= notice %></em><br>
+            <% if current_user %>
+            Welcome <%= current_user.name %> you have successfully signed in!<br>
+            <%= link_to "Sign out", logout_path %>
+            <% else %>
+            You are not signed in.<br>
+            <%= link_to "Sign in with Facebook", facebook_login_path %><br>
+            <% end %>
+            </div>
+
+
 
 
       </div>
@@ -236,7 +238,6 @@
       <div class="row">
         <div class="col-sm-3">
           <h3>Meet the Team</h3>
-          <p>WE promote a healthy Lifestyle</p>
           <div class="text-carousel-controls">
             <!-- <div class="btn btn-square prev"><i class="fa fa-angle-left"></i></div> -->
             <!-- <div class="btn btn-square next"><i class="fa fa-angle-right"></i></div> -->
@@ -245,9 +246,8 @@
         <div class="col-sm-9">
           <div class="text-carousel text-center cs-hidden">
             <div class="item">
-              <figure class="mb-20"><%= image_tag "art/team1.jpg" %></figure>
+              <figure class="mb-20"><%= image_tag "art/mike.jpg" %></figure>
               <h5>Michael Benrubi</h5>
-              <div class="meta">Co-Founder</div>
               <div class="space5"></div>
               <p>HipFit's CFO</p>
               <ul class="social">
@@ -258,9 +258,8 @@
             </div>
             <!-- /.item -->
             <div class="item">
-              <figure class="mb-20"><%= image_tag "art/team2.jpg" %></figure>
+              <figure class="mb-20"><%= image_tag "art/ariana.jpg" %></figure>
               <h5>Ariana Viale </h5>
-              <div class="meta">Founder</div>
               <div class="space5"></div>
               <p>HipFit's CEO</p>
               <ul class="social">
@@ -297,7 +296,7 @@
                 <p>Miami,Fl.</p>
               </li>
               <li><i class="budicon-profile"></i>
-                <p><a href="mailto:first.last@email.com" class="nocolor">mike@funxdable.com</a></p>
+                <p><a href="mailto:first.last@email.com" class="nocolor">info@hipfit.com</a></p>
               </li>
               <li><i class="budicon-telephone"></i>
                 <p>954-551-9247</p>
