@@ -1,4 +1,4 @@
-<h1>Welcome to HipFit!</h1>
+<!-- <h1>Welcome to HipFit!</h1>
 <em><%= notice %></em><br>
 <% if current_user %>
   Welcome <%= current_user.name %> you have successfully signed in!<br>
@@ -6,7 +6,7 @@
 <% else %>
   You are so not signed in.<br>
 <%= link_to "Sign in with Facebook", facebook_login_path %><br>
-<% end %>
+<% end %> -->
 
 
 <div class="content-wrapper">
@@ -36,13 +36,21 @@
              <li><a href="#home">Home</a> </li>
              <li><a href="#about">About</a> </li>
             <li><a href="#contact">Contact</a> </li>
-            <li><a href="/events/show">Events <span class="caret"></span></a>
+            <li><a href="">Workout</a> </li>
+            <li><a href="/events/show">Events <span class="caret"></a></li>
+              <li><a href="#">User <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="blog.html">Profile</a></li>
 
-            </ul>
+                  <li><a href="">Matches</a></li>
+                  <li><a href="">Other Users</a></li>
+                </ul>
+              </li>
 
-            </li>
 
-
+                </ul>
+              </li>
+              </ul>
 
         </div>
         <!--/.nav-collapse -->
