@@ -1,3 +1,6 @@
+<% default_image = 'https://static1.squarespace.com/static/56b4e75ed51cd4597dde2aa7/56df568b60b5e99698404d17/56df568ed51cd49a34d50cf2/1474308876725/AHR+Client+Logos+Color+RAW-15.jpg'%>
+
+
 <div class="jumbotron">
   <div class="container">
   <h1>All Users on the App</h1>
@@ -8,7 +11,12 @@
   <div class="row">
 <div class="col-lg-4">
 <% @all.each do |u| %>
-<h3><%= u.name %></h>
+<h3><% image = u.picture || default_image %>
+  <%= image_tag image, size: '100' %>
+<%= u.name %>
+  <%= u.age_range %>+
+  <%= u.user_location %>
+</h3>
 <% end %>
 </div>
 </div>

@@ -7,10 +7,6 @@ end
 def info
 end
 
-# def facebook
-#   @facebook ||= Koala::Facebook::API.new(oath_token)
-# end
-
 def exercises
   @user = current_user
   @exercises = Exercise.all
