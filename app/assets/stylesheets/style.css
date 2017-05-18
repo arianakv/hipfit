@@ -112,7 +112,7 @@ iframe {
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
     -webkit-animation-duration: .8s;
-    animation-duration: .8s;
+    animation-duration: .10s;
     -webkit-animation-name: rotation;
     animation-name: rotation;
     border-radius: 100%;

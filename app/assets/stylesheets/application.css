@@ -177,14 +177,14 @@
 
  body {
      overflow-x: hidden;
-     font-weight: normal;
+     font-weight: bold;
      -webkit-font-smoothing: antialiased;
      -moz-osx-font-smoothing: grayscale;
      -webkit-text-size-adjust: 100%;
      color: #606060;
-     font-family: 'glacial_indifferenceregular';
+     font-family: 'helvetica';
      background: #FFF;
-     font-size: 16px;
+     font-size: 18px;
  }
  body,
  li,
@@ -220,7 +220,7 @@
  .post-title a,
  .more,
  .meta a {
-     color: inherit;
+     color: blue;
  }
  .post-title a:hover,
  .more:hover,
@@ -255,7 +255,7 @@
      margin-top: 0;
  }
  h3 {
-     font-size: 24px;
+     font-size: 20px;
      line-height: 32px;
  }
  h4 {
@@ -273,12 +273,12 @@
      margin-bottom: 5px;
  }
  .upper {
-     font-family: 'glacial_indifferencebold';
+     font-family: 'helvetica';
      text-transform: uppercase;
      letter-spacing: 1.5px;
  }
  h4.upper {
-     font-size: 13px;
+     font-size: 20px;
      line-height: 20px;
  }
  .section-title {
@@ -293,7 +293,7 @@
      line-height: 34px;
  }
  .post-title {
-     font-size: 22px;
+     font-size: 16px;
      line-height: 30px;
  }
  .classic-view h1.post-title,
@@ -410,7 +410,7 @@
      display: block;
      color: #808080;
      text-transform: uppercase;
-     font-size: 22px;
+     font-size: 17px;
      line-height: 22px;
      letter-spacing: 1px;
      font-style: normal;
@@ -596,7 +596,7 @@
  }
  .navbar .navbar-nav > li > a {
      font-size: 20px;
-     font-family: 'glacial_indifferencebold';
+     font-family: 'helvetica';
      text-transform: uppercase;
      letter-spacing: 1.5px;
      transition: all 150ms ease-in-out;
@@ -604,7 +604,7 @@
      position: relative;
      padding-top: 0;
      padding-bottom: 0;
-     color: #ccc;
+     color: #fff2f2;
  }
  .navbar .navbar-nav > li > a:focus,
  .navbar .nav > li > a:hover,
@@ -1009,7 +1009,7 @@
      background-color: rgba(255, 255, 255, 1);
  }
  .tp-caption.light {
-     color: #FFF;
+     color: #fdfbfc;
  }
  .tp-dottedoverlay.darkoverlay {
      background: rgba(48, 48, 48, 0.6)

@@ -3,6 +3,8 @@ root 'users#new'
 get 'users/new'
 post 'users/assign' => 'users#assign'
 
+get 'users/edit'                          =>        'users#edit'
+get 'users/events'                      =>        'users#events'
 get 'users/match'                      =>          'users#match'
 get 'users/show'                        =>         'users#show'
 get 'users/exercises'                  =>         'users#exercises'

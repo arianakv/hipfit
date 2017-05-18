@@ -539,8 +539,8 @@ $(document).on('turbolinks:load', function() {
         target: 'instafeed',
         get: 'user',
         limit: 12,
-        userId: 1215763826,
-        accessToken: '1215763826.f1627ea.512d3a9b334a4c91ac2e83d4f4d9b291',
+        userId: 5468812146,
+        accessToken: '5468812146.d90570a.72b2e97c477542afbdf6f7117561e816',
         resolution: 'low_resolution',
         template: '<div class="item col-xs-6 col-sm-3 col-md-2"><figure class="overlay icon-overlay instagram"><a href="{{link}}" target="_blank"><img src="{{image}}" /></a></figure></div>',
         after: function() {
@@ -554,8 +554,8 @@ $(document).on('turbolinks:load', function() {
         target: 'instafeed-widget',
         get: 'user',
         limit: 6,
-        userId: 1215763826,
-        accessToken: '1215763826.f1627ea.512d3a9b334a4c91ac2e83d4f4d9b291',
+        userId: 5468812146,
+        accessToken: '5468812146.d90570a.72b2e97c477542afbdf6f7117561e816',
         resolution: 'low_resolution',
         template: '<div class="item col-xs-4 col-sm-6 col-md-4"><figure class="overlay icon-overlay instagram"><a href="{{link}}" target="_blank"><img src="{{image}}" /></a></figure></div>',
         after: function() {
