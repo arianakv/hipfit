@@ -62,62 +62,8 @@ def match
       @result.push(h)
     end
   end
- puts abc
   return @result
 end
-
-def abc
-  #takes an array of exercise ids and
-#returns an array of hashes
-#with keys :
-      #u: an instance of User
-      #e: an array of Exercises
-#the users each have in common one or more exercises with the current user
-#the returned array is sorted by the number of exercises shared with current user in descending order
-matched_exercises = [3, 1, 5, 7]
-me = matched_exercises
-result = []
-users = []
-#for each of the matched exercises |e|
-matched_exercises.each do |e|
-  #for each user |u| who have an interest in e
-  exercise_name = Exercise.find(e).exercise_name
-  users = UserExercise.where(exercise_id: e).map {|e| e.user_id}
-  users.each do |u|
-    puts "exercise: #{e} // user id: #{u}"
-    #find u in result
-    if not result.any? { |ha| ha[:user_id] == u }
-      # add u to result
-      #if u not include result, add it
-      h = {
-        :user_id => u,
-        :user_name => User.find(u).name,
-        :matches => []
-      }
-      result.push h
-    else
-      #if u already in result, assign hash to h
-      h = result.select{ |h| h[:user_id] == u }[0]
-    end
-    #push e to u
-    matches_hash = {
-      :exercise_id => e,
-      :exercise_name => exercise_name
-    }
-    h[:matches].push(matches_hash)
-  end
-puts "after exercise id (#{e}): result = #{result}"
-end
-#sort result by the number of matched exercises from greatest to least
-result.sort_by! { |x| x[:matches].length}.reverse
-
-# u = user
-# e = exercise
-return result
-end
-
-
-
 
 def get_exercise_name_from_id(id)
   name= Exercise.find(id)[:exercise_name]
