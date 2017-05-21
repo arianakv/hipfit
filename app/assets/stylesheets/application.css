@@ -831,9 +831,9 @@
      box-shadow: none;
      display: inline-block;
  }
- .btn.btn-square {
-     padding: 8px 15px 9px;
-     letter-spacing: normal;
+ /*.btn.btn-square {*/
+     /*padding: 8px 15px 9px;*/
+     /*letter-spacing: normal;*/
  }
  .btn.btn-icon i {
      padding-right: 4px;
@@ -2031,7 +2031,7 @@
  /*-----------------------------------------------------------------------------------*/
  /*	23. GO TO TOP
  /*-----------------------------------------------------------------------------------*/
- #scrollUp {
+ /*#scrollUp {
      bottom: 15px;
      right: 15px;
      transition: background 150ms ease-in-out;
@@ -2048,7 +2048,7 @@
  #scrollUp .btn:active,
  #scrollUp .btn.active {
      background: rgba(30, 30, 30, 0.8);
- }
+ }*/
  /*-----------------------------------------------------------------------------------*/
  /*	24. SOCIAL ICONS
  /*-----------------------------------------------------------------------------------*/
