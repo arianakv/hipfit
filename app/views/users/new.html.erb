@@ -1,55 +1,32 @@
 
+<body class="onepage" data-spy="scroll" data-target=".navbar">
 <div class="content-wrapper">
   <nav class="navbar nobg">
     <div class="container">
       <div class="navbar-inner">
         <div class="navbar-header">
           <a href="/"><%=image_tag "logo2.png" %></a>
-
-
           <div class="nav-bars-wrapper">
             <div class="nav-bars-inner">
               <div class="nav-bars" data-toggle="collapse" data-target=".navbar-collapse"><span></span></div>
             </div>
-
-
-            <!-- /.nav-bars-inner -->
           </div>
-
-          <!-- /.nav-bars-wrapper -->
         </div>
-        <!-- /.nav-header -->
 
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#about">About</a> </li>
+            <li><a href="#about">About</a></li>
             <li><a href="/user_profile">Profile</a></li>
             <li><a href="">Workout</a> </li>
             <li><a href="/users/events">Events</a></li>
-              <!-- <li><a href="#contact">Contact</a> </li> -->
-
-
-                <!-- <ul class="dropdown-menu">
-                  <li><a href="/user_profile">Profile</a></li>
-                  <li><a href="/users_match">Matches</a></li>
-                  <li><a href="/users_show">Other Users</a></li> -->
-
-
-            </ul>
-          </li>
-        </ul>
-
+          </ul>
+        </li>
+      </ul>
+        </div>
       </div>
-      <!--/.nav-collapse -->
     </div>
-    <!--/.navbar-inner -->
   </div>
-
-  <!--/.container -->
 </nav>
-<!--/.navbar -->
-
-
 <section id="home">
   <div class="light-wrapper">
     <div class="rev_slider_wrapper fullscreen-container">
@@ -57,7 +34,6 @@
         <ul>
           <li data-transition="parallaxtoright" data-fstransition="fade">
             <%= image_tag "art/slider-bg1.jpg" %>
-
             <div class="tp-caption light text-center"
             data-x="center"
             data-y="middle"
@@ -84,7 +60,6 @@
             data-responsive="on"
             data-responsive_offset="on"
             style="z-index: 9;"> Connecting Individuals through Fitness</div>
-
           </li>
           <li data-transition="parallaxtoleft"><%= image_tag "art/slider-bg2.jpg" %>
             <div class="tp-caption light text-center"
@@ -160,228 +135,118 @@
         </ul>
         <div class="tp-bannertimer tp-bottom"></div>
       </div>
-      <!-- /.rev_slider -->
     </div>
-    <!-- /.rev_slider_wrapper -->
   </div>
-  <!-- /.light-wrapper -->
-
-  <!-- /#home -->
-
-  <!--/column -->
-
 </div>
-<!--/.row -->
-
 </div>
-<!-- /.container -->
 </div>
-<!-- /.light-wrapper -->
-
-
-<!-- /column -->
 </div>
-<!-- /.row -->
-
 </div>
-<!-- /column -->
 </div>
-<!-- /.row -->
-
 </div>
-<!-- /.container -->
-
 </div>
-<!-- /.parallax -->
-
 </section>
-<section id="about">
+
+<section id="about" name="about">
   <div class="light-wrapper">
     <div class="container inner">
       <h2 class="section-title text-center">HOW IT WORKS</h2>
       <div class="space30"></div>
       <div class="row gutter60 text-center">
         <div class="col-sm-6 col-md-4"> <span class="icon mb-20"><i class="budicon-heart"></i></span>
-          <h4 class="upper">Connect With Facebook</h4>
-          <p><h1>Sign in</h1>
-          <em><%= notice %></em><br>
-          <% if current_user %>
-          Welcome <%= current_user.name %> you have successfully signed in!<br>
-          <%= link_to "Sign out", logout_path %>
-          <% else %>
-          You are not signed in.<br>
-          <%= link_to facebook_login_path do %><%= image_tag "art/facebook-login.jpg" %>
-          <% end %>
-        <% end %></p>
+          <h2 class="upper">Connect With Facebook</h2>
+          <p><h2>Sign in</h2>
+            <em><%= notice %></em>
+            <% if current_user %>
+            Welcome <%= current_user.name %> you have successfully signed in!<br>
+            <%= link_to "Sign out", logout_path %>
+            <% else %>
+            You are not signed in.<br>
+            <%= link_to facebook_login_path do %><%= image_tag "art/facebook-login.jpg" %>
+            <% end %>
+            <% end %></p>
+          </div>
+          <div class="col-sm-6 col-md-4"> <span class="icon mb-20"><i class="budicon-gender-female"></i></span>
+            <h4 class="upper">Get Matched With Other Users</h4>
+            <p>Connect with others who have similar fitness interests</p>
+          </div>
+          <div class="about"></div>
+          <div class="space20 visible-sm clearfix"></div>
+          <div class="col-sm-6 col-md-4"> <span class="icon mb-20"><i class="budicon-meal"></i></span>
+            <h4 class="upper">Plan Workouts/Attend Events Together</h4>
+            <p>Whether you’re an avid fitness lover, or looking to get into fitness, HipFit will make it easier to connect, meet, and maintain a consistent fitness routine!</p>
+          </div>
         </div>
-        <!--/column -->
-        <div class="col-sm-6 col-md-4"> <span class="icon mb-20"><i class="budicon-gender-female"></i></span>
-          <h4 class="upper">Match With Other Users</h4>
-          <p>HipFit is a social network created to connect individuals through fitness</p>
-        </div>
-        <!--/column -->
-        <div class="space20 visible-sm clearfix"></div>
-        <div class="col-sm-6 col-md-4"> <span class="icon mb-20"><i class="budicon-meal"></i></span>
-          <h4 class="upper">Plan Workouts/Attend Events Together</h4>
-          <p>Whether you’re an avid fitness lover, or looking to get into fitness, HipFit will make it easier to connect, meet, and maintain a consistent fitness routine!</p>
-        </div>
-
-        </div>
-        <!--/column -->
-
       </div>
-      <!--/.row -->
-
     </div>
-    <!-- /.container -->
-  </div>
-
-<!-- /#services-->
-<!-- <section id="about">
-  <div class="light-wrapper">
-    <div class="container inner">
-      <h2 class="section-title text-center">How it works!</h2>
-      <p class="lead text-center">A creative team making the world better through fitness</p>
-      <div class="space20"></div>
-      <div class="row">
-        <div class="col-md-6">
-          <figure><%= image_tag "art/exercise_some_motivation_onlineri2.png" %></figure>
-        </div>
-        <!/column -->
-        <!-- <div class="space30 hidden-xs hidden-md hidden-lg"></div>
-        <div class="col-md-6">
-          <p></p>
-          <blockquote>
-            <p>HipFit is a social network created to connect individuals through fitness. Whether you’re an avid fitness lover, or looking to get into fitness, HipFit will make it easier to connect, meet, and maintain a consistent fitness routine!</p>
-          </blockquote> -->
-
-          <!-- <h1>Sign in</h1>
-          <em><%= notice %></em><br>
-          <% if current_user %>
-          Welcome <%= current_user.name %> you have successfully signed in!<br>
-          <%= link_to "Sign out", logout_path %>
-          <% else %>
-          You are not signed in.<br>
-          <%= link_to "Sign in with Facebook", facebook_login_path %><br>
-          <% end %> -->
-        </div>
-
-
-
-
-      </div>
-
-    </div>
-
   </div>
 
 
-  <div class="light-wrapper">
-    <div class="container inner">
-      <div class="row">
-        <div class="col-sm-3">
 
-          <div class="text-carousel-controls">
-            <!-- <div class="btn btn-square prev"><i class="fa fa-angle-left"></i></div> -->
-            <!-- <div class="btn btn-square next"><i class="fa fa-angle-right"></i></div> -->
-          </div>
-        </div>
-        <div class="col-sm-9">
-          <div class="text-carousel text-center cs-hidden">
-            <div class="item">
-              <figure class="mb-20"><%= image_tag "art/mike.jpg" %></figure>
-              <h5>Michael Benrubi</h5>
-              <div class="space5"></div>
-              <p>HipFit's CFO</p>
-              <ul class="social">
-                <li><a href="www.twitter.com/djmikeb1"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="www.facebook.com/djmikeb1"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-              </ul>
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <figure class="mb-20"><%= image_tag "art/ariana.jpg" %></figure>
-              <h5>Ariana Viale </h5>
-              <div class="space5"></div>
-              <p>HipFit's CEO</p>
-              <ul class="social">
-                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-              </ul>
-            </div>
-            <!-- /.item -->
-
-
-            <!-- /.item -->
-
-            <!-- /.item -->
-          </div>
-          <!-- /.text-carousel -->
-
-        </div>
-      </div>
-    </div>
-    <!-- /.container -->
-  </div>
-  <!-- /#about -->
-
-                  </div>
-                  <!--/column -->
-
-                </div>
-                <!--/.row -->
-
-              </form>
-              <!--/.vanilla-form -->
-            </div>
-            <!--/.form-container -->
-
-          </div>
-          <!--/column -->
-
-        </div>
-        <!--/.row -->
-
-      </div>
-      <!-- /.container -->
-    </div>
-    <!-- /.light-wrapper -->
-    <div class="inverse-wrapper">
+    <div class="light-wrapper">
       <div class="container inner">
         <div class="row">
           <div class="col-sm-3">
-            <h3>Instagram</h3>
-            <p></p>
-            <a href="https://instagram.com/urbanshots/" class=""></a> </div>
-          <div class="col-sm-9">
-            <div class="tiles tiles-s instagram">
-              <div id="instafeed" class="items row row-offset-0"></div>
-            </div>
-  </section>
-  <!-- /#contact -->
-</div>
-<!-- /.content-wrapper -->
-<footer class="inverse-wrapper">
-  <div class="sub-footer">
-    <div class="container inner">
-      <div class="cell text-left">
-        <p>© 2017 HipFit. All rights reserved.</p>
-      </div>
-      <!-- /.cell -->
-      <div class="cell text-right">
-        <ul class="social">
-          <li><a href="#"><i class="fa fa-rss"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
 
-          <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-        </ul>
+            <div class="text-carousel-controls">
+            </div>
+          </div>
+
+          <div class="col-sm-9">
+            <div class="text-carousel text-center cs-hidden">
+              <div class="item">
+                <figure class="mb-20"><%= image_tag "art/mike.jpg" %></figure>
+                <h5>Michael Benrubi</h5>
+                <div class="space5"></div>
+                <p>HipFit's CFO</p>
+                <ul class="social">
+                  <li><a href="www.twitter.com/djmikeb1"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="www.facebook.com/djmikeb1"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                </ul>
+              </div>
+              <div class="item">
+                <figure class="mb-20"><%= image_tag "art/ariana.jpg" %></figure>
+                <h5>Ariana Viale </h5>
+                <div class="space5"></div>
+                <p>HipFit's CEO</p>
+                <ul class="social">
+                  <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- /.cell -->
     </div>
-    <!-- /.sub-footer -->
-  </div>
-  <!-- /.container -->
-</footer>
+
+
+  <div class="inverse-wrapper">
+    <div class="container inner">
+      <div class="row">
+        <div class="col-6">
+          <!-- <div class="space30"></div> -->
+          <a href="https://instagram.com/urbanshots/" class=""></a> </div>
+          <div class="col-6">
+            <div class="tiles tiles-s instagram">
+              <div id="instafeed" class="items row row-offset-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="inverse-wrapper">
+      <div class="sub-footer">
+        <div class="container inner">
+          <div class="cell text-left">
+            <p>© 2017 HipFit. All rights reserved.</p>
+          </div>
+
+
+        </div>
+
+      </div>
+    </footer>
+    </body>

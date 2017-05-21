@@ -21,26 +21,13 @@
             <li><a href="/users/events">Events</a></li>
               <!-- <li><a href="/#contact">Contact</a> </li> -->
             </ul>
-           </li>
-           </ul>
+
         </div>
         </div>
         </div>
 
 
-<div class="container">
-    <div class="span3 well">
-        <center>
-        <%= image_tag current_user.picture %></a>
-        <h3>Hi, <%= current_user.name %></h3>
-        <%= current_user.age_range %> +
-        <%= current_user.user_location %>
-        <%= current_user.gender %>
-        <%= link_to "Go to profile", current_user.link%><br><br>
-        <%= link_to "See your matches!", users_match_path, class: 'btn btn-primary btn-sm'%></br>
-        <%= link_to "Find other users", users_show_path, class: 'btn btn-primary btn-sm' %></br>
-        <%= link_to "Change your exercise preferences", users_exercises_path, class: 'btn btn-primary btn-sm' %></br>
-        <%= link_to "Sign out", logout_path, class: 'btn btn-primary btn-sm' %>
+
 
 
       <!--/.nav-collapse -->
@@ -48,29 +35,25 @@
     <!--/.navbar-inner -->
 </nav>
   <!--/.container -->
-  <div class="offset"></div>
   <div class="light-wrapper">
-    <div class="container inner2">
-        <div class="col-sm-8 list-view">
-          <div class="blog-content">
-            <div class="blog-post">
-              <div class="post row">
-                <div class="col-md-5">
-                </div>
-                </div>
-                </div>
-                </div>
-                </div>
-                  </div>
-                  </div>
+    <div class="container inner">
+      <div class="space20"></div>
+      <div class="row"></div>
+          <center>
+          <%=link_to current_user.link do %><%= image_tag current_user.picture %></a><% end %>
+          <h3>Hi, <%= current_user.name %></h3>
+          <%= current_user.age_range %> +
+          <%= current_user.user_location %>
+          <%= current_user.gender %>
+          <%= link_to "", current_user.link%><br><br>
+          <%= link_to "See your matches!", users_match_path, class: 'btn btn-primary btn-sm'%></br>
+          <%= link_to "Find other users", users_show_path, class: 'btn btn-primary btn-sm' %></br>
+          <%= link_to "Change your exercise preferences", users_exercises_path, class: 'btn btn-primary btn-sm' %></br>
+          <%= link_to "Sign out", logout_path, class: 'btn btn-primary btn-sm' %>
 
-  <h1>User Profile</h1>
-<%= link_to "See your matches!", users_match_path, class: 'btn btn-primary btn-sm'%></br>
-<%= link_to "Find other users", users_show_path, class: 'btn btn-primary btn-sm' %></br>
-<%= link_to "Change your exercise preferences", users_exercises_path, class: 'btn btn-primary btn-sm' %></br>
-<%= link_to "Sign out", logout_path, class: 'btn btn-primary btn-sm' %>
 
 		</center>
+    </div>
     </div>
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

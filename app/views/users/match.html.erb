@@ -5,10 +5,21 @@
 </div>
 
 
+<div class="container">
+  <div class="row">
+<div class="col-lg-4">
 <% @result.each do |user| %>
-<h2><%= user[:user_name] %></h2>
-
-<% user[:matches].each do |e| %>
+<%=link_to user[:user].link do %><% image = user[:user].picture || default_image %><br>
+  <%= image_tag image, size: '100' %>
+  <% end %>
+<h2><%= user[:user].name %></h2>
+<%= user[:user].gender.upcase %><br>
+<%= user[:user].user_location %><br>
+Also likes
+<% user[:matches].each do |e| %><br>
 <%= e[:exercise_name] %>
+<% end %><br>
+<%=link_to user[:user].link do %><button type="button" class="btn btn-primary btn-md">Message on Facebook</button>
+<hr>
 <% end %>
 <% end %>

@@ -93,7 +93,7 @@ end
           #if u not include result, add it
           h = {
             :user_id => u,
-            :user_name => User.find(u).name,
+            :user => User.find(u),
             :matches => []
           }
           result.push h
