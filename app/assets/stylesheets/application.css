@@ -255,7 +255,7 @@
      margin-top: 0;
  }
  h3 {
-     font-size: 20px;
+     font-size: 25px;
      line-height: 32px;
  }
  h4 {
@@ -268,7 +268,7 @@
      margin-bottom: 5px;
  }
  h6 {
-     font-size: 18px;
+     font-size: 22px;
      line-height: 26px;
      margin-bottom: 5px;
  }
@@ -293,7 +293,7 @@
      line-height: 34px;
  }
  .post-title {
-     font-size: 16px;
+     font-size: 20px;
      line-height: 30px;
  }
  .classic-view h1.post-title,
@@ -1139,7 +1139,7 @@
      transition: all 400ms ease-in-out;
  }
  a.cbp-caption p {
-     font-family: 'glacial_indifferencebold';
+     font-family: 'helvetica neue';
      font-size: 13px;
      text-transform: uppercase;
      letter-spacing: 1.5px;
@@ -1201,7 +1201,7 @@
      margin-bottom: 6px;
      margin-left: 6px;
      font-size: 12px;
-     font-family: 'glacial_indifferencebold';
+     font-family: 'helvetica neue';
      text-transform: uppercase;
      letter-spacing: 1.5px;
      line-height: 1;
@@ -1803,7 +1803,7 @@
      color: #303030;
      font-size: 16px;
      line-height: 1;
-     font-family: 'glacial_indifferenceregular';
+     font-family: 'helvetica neue';
      border-radius: 0;
      transition: all 150ms ease-in-out;
  }
@@ -2515,7 +2515,7 @@
  }
  .lg-actions .lg-next:before,
  .lg-actions .lg-prev:after {
-     font-family: 'FontAwesome';
+     font-family: 'helvetica neue';
      font-size: 45px;
      border-radius: 0;
      font-weight: normal;
