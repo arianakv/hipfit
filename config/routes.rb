@@ -3,6 +3,7 @@ root 'users#new'
 get 'users/new'
 post 'users/assign' => 'users#assign'
 
+get 'users/workout'               =>          'users#workout'
 get 'facebook/token'
 get 'users/edit'                          =>        'users#edit'
 get 'users/events'                      =>        'users#events'

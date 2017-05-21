@@ -338,7 +338,80 @@ $(document).on('turbolinks:load', function() {
     /*-----------------------------------------------------------------------------------*/
     /*	LAZY LOAD GOOGLE MAPS
     /*-----------------------------------------------------------------------------------*/
-    ;
+    ;  (function($, window, document, undefined) {
+        var $window = $(window),
+            mapInstances = [],
+            $pluginInstance = $('.google-map').lazyLoadGoogleMaps({
+                callback: function(container, map) {
+                    var $container = $(container),
+                        center = new google.maps.LatLng($container.attr('data-lat'), $container.attr('data-lng'));
+
+                    map.setOptions({
+                        center: center,
+                        zoom: 15,
+                        zoomControl: true,
+                        zoomControlOptions: {
+                            style: google.maps.ZoomControlStyle.DEFAULT,
+                        },
+                        disableDoubleClickZoom: false,
+                        mapTypeControl: true,
+                        mapTypeControlOptions: {
+                            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+                        },
+                        scaleControl: true,
+                        scrollwheel: false,
+                        streetViewControl: true,
+                        draggable: true,
+                        overviewMapControl: false,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    });
+
+
+
+                    var mapicon = new google.maps.MarkerImage("style/images/marker@2x.png", null, null, null, new google.maps.Size(40, 40));
+
+                    var marker = new google.maps.Marker({
+                        position: center,
+                        map: map,
+                        icon: mapicon
+                    });
+
+                    var contentString = '<div class="map-info">' +
+                        '<h5></h5>' +
+                        '<div class="map-info-body">' +
+                        '<p></p>' +
+                        '</div>' +
+                        '</div>';
+
+                    var infowindow = new google.maps.InfoWindow({
+                        content: contentString,
+                        maxWidth: 200
+                    });
+                    marker.addListener('click', function() {
+                        infowindow.open(map, marker);
+                    });
+
+                    $.data(map, 'center', center);
+                    mapInstances.push(map);
+
+                    var updateCenter = function() {
+                        $.data(map, 'center', map.getCenter());
+                    };
+                    google.maps.event.addListener(map, 'dragend', updateCenter);
+                    google.maps.event.addListener(map, 'zoom_changed', updateCenter);
+                    google.maps.event.addListenerOnce(map, 'idle', function() {
+                        $container.addClass('is-loaded');
+                    });
+                }
+            });
+
+        $window.on('resize', $pluginInstance.debounce(1000, function() {
+            $.each(mapInstances, function() {
+                this.setCenter($.data(this, 'center'));
+            });
+        }));
+
+    })(jQuery, window, document);
 
     /*-----------------------------------------------------------------------------------*/
     /*	GO TO TOP
