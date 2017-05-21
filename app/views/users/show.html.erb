@@ -11,8 +11,9 @@
   <div class="row">
 <div class="col-lg-4">
 <% @all.each do |u| %>
-<h3><% image = u.picture || default_image %>
+<h3><%=link_to u.link do %><% image = u.picture || default_image %>
   <%= image_tag image, size: '100' %>
+  <% end %>
 <%= u.name %>
   <%= u.age_range %>+
   <%= u.user_location %>
