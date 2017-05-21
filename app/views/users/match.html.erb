@@ -5,12 +5,14 @@
 </div>
 
 
+
 <div class="container">
   <div class="row">
 <div class="col-lg-4">
+  <a href="/user_profile"><< Back to Profile</a><br>
 <% @result.each do |user| %>
 <%=link_to user[:user].link do %><% image = user[:user].picture || default_image %><br>
-  <%= image_tag image, size: '100' %>
+  <%= image_tag image %>
   <% end %>
 <h2><%= user[:user].name %></h2>
 <%= user[:user].gender.upcase %><br>

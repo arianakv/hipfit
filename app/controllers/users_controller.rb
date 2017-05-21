@@ -75,7 +75,8 @@ end
         #e: an array of Exercises
   #the users each have in common one or more exercises with the current user
   #the returned array is sorted by the number of exercises shared with current user in descending order
-  matched_exercises = [3, 1, 5, 7]
+  @user = current_user
+  matched_exercises = @user.exercises.map &:id   
   me = matched_exercises
   result = []
   users = []

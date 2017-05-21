@@ -10,12 +10,13 @@
 <div class="container">
   <div class="row">
 <div class="col-lg-4">
+    <a href="/user_profile"><< Back to Profile</a><br><br>
 <% @all.each do |u| %>
 <h3><%=link_to u.link do %><% image = u.picture || default_image %>
-  <%= image_tag image, size: '100' %>
+  <%= image_tag image, size: '100' %><br>
   <% end %>
 <%= u.name %>
-  <%= u.age_range %>+
+  <%= u.gender %><br>
   <%= u.user_location %>
 </h3>
 <% end %>
